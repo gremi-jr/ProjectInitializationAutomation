@@ -19,6 +19,6 @@ path:
 ```bash
 Command to run the program type
 
-'create <project_name>'
+'create <project_name> <g>'   - for global
 'create <project_name> <l>'   - for just locally
 ```
