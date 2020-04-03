@@ -7,7 +7,7 @@ create env vars :
 
 ### setup: 
 ```bash
-git clone "https://github.com/wikyprash/projectInitializerAutomation.git"
+git clone "https://github.com/gremi-jr/projectInitializerAutomation.git"
 cd projectInitializerAutomation
 pip install -r requirements.txt
 
