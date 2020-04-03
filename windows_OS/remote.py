@@ -10,16 +10,23 @@ _dir = path + '/' + foldername
 g = Github(token)
 user = g.get_user()
 login = user.login
-repo = user.create_repo(foldername)
 
-commands = [f'echo # {repo.name} >> README.md',
-            'git init',
-            f'git remote add origin https://github.com/{login}/{foldername}.git',
-            'git add .',
-            'git commit -m "Initial commit"',
-            'git push -u origin master']
+if sys.argv[3] == "private":
+    visibility = True
+elif sys.argv[3] =="public":
+    visibility = False
+else:
+    print("Choose visibility")
+
 
 if sys.argv[2] == "g":
+    repo = user.create_repo(foldername, private=visibility)
+    commands = [f'echo # {repo.name} >> README.md',
+                'git init',
+                f'git remote add origin https://github.com/{login}/{foldername}.git',
+                'git add .',
+                'git commit -m "Initial commit"',
+                'git push -u origin master']    
     os.mkdir(_dir)
     os.chdir(_dir)
 
@@ -31,3 +38,6 @@ if sys.argv[2] == "g":
 
 else:
     print("create <foldername>")
+
+
+

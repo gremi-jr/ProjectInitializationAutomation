@@ -19,6 +19,6 @@ path:
 ```bash
 Command to run the program type
 
-'create <project_name> <g>'   - for global
+'create <project_name> <g> <public/private>'   - for global and visibility of the repo
 'create <project_name> <l>'   - for just locally
 ```
