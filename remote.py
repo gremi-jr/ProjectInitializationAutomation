@@ -12,7 +12,7 @@ user = g.get_user()
 login = user.login
 repo = user.create_repo(foldername)
 
-commands = [f'echo "# {repo.name}" >> README.md',
+commands = [f'echo # {repo.name} >> README.md',
             'git init',
             f'git remote add origin https://github.com/{login}/{foldername}.git',
             'git add .',
@@ -30,4 +30,4 @@ if sys.argv[2] == "g":
     os.system('code .')
 
 else:
-    print("create <fldername>")
+    print("create <foldername>")
