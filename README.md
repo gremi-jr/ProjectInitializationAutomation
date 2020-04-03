@@ -1,24 +1,21 @@
-### pre-setup:
-```
-create env vars :
-> projects directory as - "mp"
-> Github tocken as      - "gt"
-```
-
-### setup: 
+### Install: 
 ```bash
-git clone "https://github.com/wikyprash/projectInitializerAutomation.git"
-cd projectInitializerAutomation
+git clone "https://github.com/KalleHallden/ProjectInitializationAutomation.git"
+cd ProjectInitializationAutomation
 pip install -r requirements.txt
-
-path:
-"projectInitializerAutomation" folder directory to path
+touch .env
+Then open the .env file and store your username, password, and desired file destination. Use the provided format at the bottom of this README.
+source ~/.my_commands.sh
 ```
 
 ### Usage:
 ```bash
-Command to run the program type
+To run the script type in 'create <name of your folder>'
+```
 
-'create <project_name> <g>'   - for global
-'create <project_name> <l>'   - for just locally
+### Env File Format:
+```bash
+USERNAME="Username123"
+PASSWORD="Password123"
+FILEPATH="/path/to/your/project/"
 ```
