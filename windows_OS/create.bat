@@ -23,6 +23,8 @@ if "%2"=="g" (
 )
 
 
+cd "%mp%\%fn%"
+
 :write_Help
     echo.
     echo Syntax: create ^<name^> ^<g/l^> ^<public/private^>
