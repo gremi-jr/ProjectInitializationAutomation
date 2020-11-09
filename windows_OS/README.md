@@ -1,6 +1,6 @@
 ### pre-setup:
 ```
-create env vars :
+create enviroment variables :
 > projects directory as - "mp"
 > Github tocken as      - "gt"
 ```
@@ -11,7 +11,7 @@ git clone "https://github.com/gremi-jr/ProjectInitializationAutomation.git"
 cd projectInitializerAutomation
 pip install -r requirements.txt
 
-path:
+Add path to the create.bat to path enviroment variable:
 "projectInitializerAutomation/windows_OS" folder directory to path
 ```
 
